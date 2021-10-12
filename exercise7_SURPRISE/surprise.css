@@ -1,0 +1,132 @@
+body{
+    background-color: grey;
+    background-size: cover;
+}
+#wrapper{
+    position: relative;
+    background-color: rgba(0,0,0,0.2);
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+h1{
+    color: white;
+    text-align:center;
+}
+
+/**********Solution1**********/
+#solution1{
+    font-size:0;
+    padding-top:25px;
+}
+#inhalt1{
+    background-image: url(Surprise_Bildmaterial/vw_logo.png);
+    background-size: cover;
+    width:300px;
+    height:300px;
+    margin-left: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+#inhalt1:hover{
+    background-image: url(Surprise_Bildmaterial/vw_auto.png);
+}
+#inhalt2{
+    background-image: url(Surprise_Bildmaterial/bmw_logo.png);
+    background-size: cover;
+    width:300px;
+    height:300px;
+    margin-left: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+#inhalt2:hover{
+    background-image: url(Surprise_Bildmaterial/bmw_auto.png);
+}
+
+/**********Solution2**********/
+img{
+    width:300px;
+    height:300px;
+    display: inline-block;
+    border-radius: 150px;
+}
+#vorhang1{
+    position: relative;
+    left:50px;
+    z-index:2;
+}
+#vorhang2{
+    position: relative;
+    left:100px;
+    z-index: 2;
+}
+#vorhang1:hover, #vorhang2:hover{
+    z-index: -1;
+}
+#inhalt3{
+    position: absolute;
+    left: 50px;
+    z-index: 1;
+}
+#inhalt4{
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+}
+#inhalt3:hover, #inhalt4:hover{
+    z-index: 3;
+}
+/*
+#inhalt3{
+    background-color: rgba(255,255,255,0.6);
+    width:300px;
+    border-radius: 150px;
+    position:absolute;
+    top: 400px; 
+    left: 50px; 
+    z-index:2;
+    cursor: pointer;
+}
+#inhalt3:hover{
+    z-index: 3;
+}
+#inhalt4{
+    background-color: rgba(255,255,255,0.6);
+    width:300px;
+    border-radius: 150px;
+    position:absolute;
+    top: 400px; 
+    left: 400px; 
+    z-index:2;
+    cursor: pointer;
+}
+#inhalt4:hover{
+    z-index: 3;
+}
+#Vordergrund1{
+    background-color: rgba(255,255,255,0.6);
+    width:300px;
+    border-radius: 150px;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    z-index: 3;
+}
+#Vordergrund1:hover{
+    z-index: 2;
+}
+#Vordergrund2{
+    background-color: rgba(255,255,255,0.6);
+    width:300px;
+    border-radius: 150px;
+    position: absolute;
+    left: 400px;
+    top: 400px;
+    z-index: 3;
+}
+#Vordergrund2:hover{
+    z-index: 2;
+}
+*/
