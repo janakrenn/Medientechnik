@@ -1,0 +1,85 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+
+/************body************/
+
+body{
+	background:url(../images/pattern.png);
+	color:white;
+	font-family: 'Century Gothic', Arial, sans-serif;
+	width: 900px;
+	margin: 0 auto;/*sorgt für die zentrierte Ausrichtung*/ 
+	line-height: 150%;	
+}
+
+/***********Navigation************/
+nav{
+    font-size:0;/*nötig um den unerwünschten Abstand zwischen den Blöcken zu entfernen*/
+}
+nav a{
+    display: inline-block;
+    font-size:16px;/*SChriftgröße um Links sichtbar zu machen*/
+    width:15%;/*definiert die Breite der Navigationspunkte*/
+    background-color:white;
+    color:black;
+    text-decoration:none; /*entfernt den Unterstrich beim Link*/
+    padding:5px;
+    margin: 20px 0px;
+    text-align:center;
+}
+nav a:hover{
+    background-color:dimgray;
+    color:white;
+}
+
+/************Typo******************/
+h1{
+    text-align:center;
+    border-bottom:1px solid white;
+    font-size:220%;
+    padding-bottom:20px;
+    margin:10px;
+}
+h2{
+    text-align:center;
+}
+h3{
+    text-align:center;
+}
+	
+/***********Image*****************/
+.Headerbilder{
+    border:10px solid white;
+}
+.smallimage{
+    display:block;/*Bilder werden von Inline-Elementen in Block-Elemente umgeandelt und können so positioniert werden.*/
+    margin:10px auto;
+}
+
+
+/**********Boxen Spalten****************/
+.container{
+    display:flex;
+}
+.spalte{
+    width:50%;
+    padding:15px;
+}
+
+/**************Footer*******************/
+footer{
+    border-top: 1px solid white;
+    width:900px;
+    margin:50px auto;
+    text-align:center;
+    font-size:80%;
+}
+footer p a{
+    color:mediumpurple;
+}
+footer p a:hover{
+    color:green;
+}
