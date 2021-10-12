@@ -1,0 +1,86 @@
+/** CSS-Stylesheet
+*	author: HTL Leonding
+**/
+
+/************* general setting *************/
+body {
+    margin: 0;
+    font-family: "Calibri Light", sans-serif;
+    line-height: 140%;
+    box-sizing: border-box;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+
+
+/************* nav *************/
+nav{
+    position:fixed;
+    top:0px;
+    background-color:black;
+    color:white;
+    width: 100%;
+}
+nav a{
+    display: inline-block;
+    color: white;
+    padding: 0.6em 3em;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav a:hover{
+    background-color:red;
+}
+
+
+/************* main content (boxes) *************/
+#main{
+    margin-top: 3em;
+    padding: 2em;
+}
+.row{
+    display: flex;
+}
+.box{
+    border: 2px solid lightgrey;
+    padding: 1em;
+    width: 45%;
+    margin: 2em;
+}
+.box img{
+    width: 35%;
+    float: left;
+    margin-right: 1em;
+}
+
+
+/************* footer *************/
+footer {
+    background-color: silver;
+    padding: 0.5em 0;
+}
+footer p {
+    color: black;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    nav a{
+        display: block;
+        text-align:center;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .box{
+        width: 100%;
+    }
+    #main{
+        margin-top: 10em;
+    }
+    
+}
